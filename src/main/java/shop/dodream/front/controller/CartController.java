@@ -91,7 +91,7 @@ public class CartController {
 	}
 	
 	@PutMapping("/cart/{cartItemId}")
-	@ResponseBody // 이 어노테이션을 추가하여 view가 아닌 데이터를 반환하도록 설정
+	@ResponseBody
 	public ResponseEntity<Void> updateQuantity(@PathVariable Long cartItemId,
 	                                           @RequestParam("quantity") Long quantity) {
 		try {
